@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "okabe",
+    "password": "dibuka007;",
+    "database": "expressauth",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "okabe",
+    "password": "dibuka007;",
+    "database": "expressauth",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "okabe",
+    "password": "dibuka007;",
+    "database": "expressauth",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
