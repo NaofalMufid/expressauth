@@ -57,7 +57,7 @@ router.get('/product', passport.authenticate('jwt', {session: false}), function(
         Product
         .findAll()
         .then((products) => res.status(200).send(products))
-        .catch((error) => { res.status(400).send(err) })
+        .catch((error) => { res.status(400).send(error) })
     } else {
         return res.status(403).send({success: false, msg: 'Unauthorized'})
     }

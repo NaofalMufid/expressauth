@@ -13,6 +13,6 @@ module.exports = function (passport) {
         User
         .findByPk(jwt_payload.id)
         .then((user) => { return done(null, user) })
-        .catch((error) => { return done(Error, false) })
+        .catch((error) => { return done(error, false) })
     }))
 }
