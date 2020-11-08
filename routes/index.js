@@ -1,9 +1,13 @@
-var express = require('express');
-var router = express.Router();
+const router = require('express').Router();
+const controller = require('../controllers');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', controller.home);
+
+router.use(controller.notFound);
+router.use(controller.exception);
+
+const dashboard = require('./dashboard');
+router.use('/dashboard', dashboard);
 
 module.exports = router;

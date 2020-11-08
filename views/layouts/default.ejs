@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="stylesheets/default.css">
+    <link rel="stylesheet" href="stylesheets/dashboard.css">
+</head>
+<body>
+    <!-- <div class="root container-fluid bg-light d-flex justify-content-center align-items-center"> -->
+        <!-- Navbar -->
+        <%- include('../partials/navbar.ejs') %>
+        <!-- Card Container -->
+        <div class="container-fluid">
+            <div class="container d-flex p-4 flex-column">
+                <!-- Content Title -->
+                <h4><%= "contentName" %></h4>
+                <div class="container-fluid p-4 bg-white">
+                    <!-- Content -->
+                    <%- body %>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>
