@@ -16,7 +16,7 @@ router.post('/signup', function(req,res) {
             username: req.body.username,
             password: req.body.password
         })
-        .then((user) => res.status(201).send(user))
+        .then(() => res.status(201).send("Registration success"))
         .catch((error) => {
             console.log(error)
             res.status(400).send(error)
